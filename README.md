@@ -1,7 +1,7 @@
 # Replicator
-Replicate items
+Replicate any item which will fit into a loot container.
 
-Any item which will fit into a loot container.  However, the item must be in the list of ReplicateableTypes (item categories) and cannot be in the blacklist (prefab name match).
+However, the item must be in the list of ReplicateableTypes (item categories) and cannot be in the blacklist (prefab name match).
 See the configuration section below.
 
 ## Permissions
