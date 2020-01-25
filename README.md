@@ -5,6 +5,10 @@ Replicate any item which will fit into a loot container.
 However, the item must be in the list of ReplicateableTypes (item categories) and cannot be in the blacklist (prefab name match).
 See the configuration section below.
 
+## Requires
+
+	[Economics](https://umod.org/plugins/economics)
+
 ## Permissions
 
 - `replicator.use` -- Allows player to open the personal replicator
