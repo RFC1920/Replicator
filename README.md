@@ -7,7 +7,7 @@ See the configuration section below.
 
 ## Requires
 
-	[Economics](https://umod.org/plugins/economics)
+[Economics](https://umod.org/plugins/economics)
 
 ## Permissions
 
