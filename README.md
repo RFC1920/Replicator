@@ -1,4 +1,5 @@
 # Replicator
+This is a very silly plugin, indeed.
 Replicate any item which will fit into a loot container.
 
 However, the item must be in the list of ReplicateableTypes (item categories) and cannot be in the blacklist (prefab name match).
