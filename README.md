@@ -1,6 +1,7 @@
-# Replicator
-This is a very silly plugin, indeed.
+# Replicator for Rust (Remod original)
 Replicate any item which will fit into a loot container.
+
+[Download](https://code.remod.org/Replicator.cs)
 
 However, the item must be in the list of ReplicateableTypes (item categories) and cannot be in the blacklist (prefab name match).
 See the configuration section below.
