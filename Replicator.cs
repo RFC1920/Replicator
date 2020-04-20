@@ -1,5 +1,4 @@
 //#define DEBUG
-// Requires: Economics
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +13,7 @@ using Oxide.Game.Rust.Cui;
 
 namespace Oxide.Plugins
 {
-    [Info("Replicator", "RFC1920", "1.0.0")]
+    [Info("Replicator", "RFC1920", "1.0.1")]
     [Description("Replicate items")]
     class Replicator : RustPlugin
     {
@@ -235,7 +234,7 @@ namespace Oxide.Plugins
         void cmdReplicator(BasePlayer player, string command, string[] args)
         {
             if(npconly) return;
-            if(!permission.UserHasPermission(player.UserIDString, "replicator.use")) 
+            if(!permission.UserHasPermission(player.UserIDString, "replicator.use"))
             {
                 SendReply(player, GetMsg("Denied: Permission", player));
             }
@@ -273,11 +272,11 @@ namespace Oxide.Plugins
             return null;
         }
 
-        void OnPlayerInit(BasePlayer player)
+        void OnPlayerConnected(BasePlayer player)
         {
-            onlinePlayers [player].View = null;
-            onlinePlayers [player].Target = null;
-            onlinePlayers [player].Matches = null;
+            onlinePlayers[player].View = null;
+            onlinePlayers[player].Target = null;
+            onlinePlayers[player].Matches = null;
         }
 
         void OnPlayerDisconnected(BasePlayer player)
